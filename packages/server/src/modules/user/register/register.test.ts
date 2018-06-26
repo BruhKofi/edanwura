@@ -1,5 +1,6 @@
 import { Connection } from "typeorm";
 import * as faker from "faker";
+import {emailNotLongEnough, invalidEmail, passwordNotLongEnough } from '@abb/common'
 
 import { User } from "../../../entity/User";
 import {
