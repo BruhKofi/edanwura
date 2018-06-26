@@ -3,10 +3,9 @@ import { ApolloClient } from "apollo-client";
 import { HttpLink } from "apollo-link-http";
 
 export const client = new ApolloClient({
+  cache: new InMemoryCache(),
   link: new HttpLink({
       credentials: "include",
       uri: "https://localhost:4000",
     }),
-     // tslint:disable-next-line:object-literal-sort-keys
-     cache: new InMemoryCache(),
 });
