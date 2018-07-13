@@ -9,6 +9,7 @@ import {
 import { User } from '../../../entity/User';
 import { TestClient } from '../../../utils/TestClient';
 import { createTestConn } from '../../../testUtils/createTestConn';
+import { duplicateEmail } from './errorMessages';
 
 faker.seed(Date.now() + 5);
 const email = faker.internet.email();
