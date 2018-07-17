@@ -4,10 +4,10 @@ const client = new SparkPost(process.env.SPARKPOST_API_KEY);
 export const sendEmail = async (recipient: string, url: string) => {
   const response = await client.transmissions.send({
     options: {
-      sandbox: true
+      sandbox: false
     },
     content: {
-      from: "testing@sparkpostbox.com",
+      from: "testing@vasnte.com",
       subject: "Confirm Email",
       html: `<html>
         <body>
