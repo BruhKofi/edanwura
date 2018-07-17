@@ -1,5 +1,7 @@
 FROM node
 
+ENV NODE_ENV production
+
 WORKDIR /abb
 
 COPY ./package.json .
@@ -17,7 +19,6 @@ COPY ./ormconfig.json .
 
 WORKDIR ./packages/server
 
-ENV NODE_ENV production
 
 EXPOSE 4000
 

@@ -5,6 +5,7 @@ build/
 temp/
 *.log
 dump.rdb
-.env
+*.env*
 dist
 packages/server/.env
+.netlify
