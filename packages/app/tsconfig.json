@@ -6,6 +6,10 @@
       "commonjs",
     "jsx":
       "react-native",
+    "lib": [
+      "es5",
+      "esnext.asynciterable"
+    ],
     "strict": true,
      "esModuleInterop": true,
      "rootDir": "src",
