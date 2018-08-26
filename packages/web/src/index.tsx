@@ -9,7 +9,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import { Routes } from "./routes";
 
 ReactDOM.render(
-  <ApolloProvider client={client}>
+  <ApolloProvider client={client as any}>
   <Routes />
   </ApolloProvider>,
   document.getElementById("root") as HTMLElement,
